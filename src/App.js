@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import Goodbye from './components/goodbye/goodbay';
 import './App.css';
-
+import { Welcome } from './components/welcome/welcome.js';
+import { ColorredText } from './components/colorText/colorText';
+function formatName(firstname, lastName) {
+  return `${firstname} ${lastName}`;
+}
 function App() {
+ 
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <ColorredText/>
     </div>
   );
 }
