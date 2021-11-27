@@ -1,4 +1,4 @@
-import *as React from 'react';
+import * as React from 'react';
 export class ColorredText extends React.Component {
     constructor() {
         super();
@@ -7,6 +7,7 @@ export class ColorredText extends React.Component {
             background:"Black"
         };
     }
+
     onBackGroundChange = (event) => {
         this.setState({
             background: event.target.value
